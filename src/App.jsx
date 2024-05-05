@@ -1,10 +1,12 @@
 import AppRouter from './AppRouter'
+import { PokemonProvider } from './context/PokemonProvider'
 
 function App() {
   return (
     <>
-      <AppRouter />
-      <h1>Hello world!!</h1>
+      <PokemonProvider>
+        <AppRouter />
+      </PokemonProvider>
     </>
   )
 }
